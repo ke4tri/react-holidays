@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Auth.scss';
-import authRequests from '../../../helpers/data/authRequests';
+import authRequests from '../../../helpers/data/authRequest';
 
-import googleButton from './images/google_PNG19626.png';
+import googleButton from './Images/google_PNG19626.png';
 
 class Auth extends React.Component {
   authenticateUser = (e) => {
@@ -14,6 +14,11 @@ class Auth extends React.Component {
   }
 
   render() {
+    // eslint-disable-next-line no-undef
+    // if (pendingUser) {
+    //   return null;
+    // }
+
     return (
       <div className='Auth mx-auto'>
       <span>LOGIN WITH</span>
